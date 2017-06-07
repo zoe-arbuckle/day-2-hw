@@ -8,7 +8,7 @@ function deleteItem(){
 function renderListItem(value){
     const item = document.createElement('li')
     item.innerHTML = `${value}`
-    listInfo.appendChild(item) //work out how to prepend
+    listInfo.prepend(item) //work out how to prepend
 }
 
 function handleSubmit(ev){

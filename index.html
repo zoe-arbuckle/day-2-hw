@@ -6,15 +6,25 @@
         <title>List Maker</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css"
     </head>
     <body>
-        <h2>Enter Description</h2>
+        <h2>A List of Cool Animals</h2>
 
         <section>
             <div>
                 <form id = "submitForm">
-
+                    <p>
+                        <label for="animals">Cool Animals</label>
+                        <input type="text" name="animals">
+                    </p>
+                    <p>
+                        <button type = "submit">Submit</button>
+                    </p>
                 </form>
+            </div>
+            <div>
+                <ul id="listInfo"></ul>
             </div>
         </section>
 

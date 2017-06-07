@@ -19,3 +19,14 @@ button{
 li{
     font-family: Cambria, Times New Roman, serif;
 }
+
+h2{
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/0c/ce/2f/0cce2fd2ba502ea217b244e536fbdc47.jpg")
+    
+}
+
+img{
+    background-attachment: fixed;
+    position: relative;
+    background-size: contain;
+}

@@ -6,7 +6,7 @@ function deleteItem(e){
 }
 
 function promote(e){
-  console.log('promote')
+
 }
 
 function renderDeleteButton(){
@@ -34,6 +34,7 @@ function renderListItem(value){
     item.appendChild(del)
     listInfo.prepend(item)
     prom.addEventListener('click', promote)
+    del.addEventListener('click', deleteItem)
 }
 
 function handleSubmit(ev){

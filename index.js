@@ -2,11 +2,13 @@ const submitForm = document.querySelector('#submitForm')
 const listInfo = document.querySelector('#listInfo')
 
 function deleteItem(e){
-  console.log('delete')
+  e.target.parentNode.remove()
 }
 
 function promote(e){
-
+  e.target.parentNode.style.border = '1px solid darkslateblue'
+  e.target.parentNode.style.backgroundColor = 'lightgoldenrodyellow'
+  e.target.parentNode.style.color = 'darkviolet'
 }
 
 function renderDeleteButton(){

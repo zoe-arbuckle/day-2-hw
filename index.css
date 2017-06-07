@@ -14,15 +14,17 @@ button{
     border-style: solid;
     padding: 3px;
     background-color: white;
+    margin: 5px;
 }
 
 li{
     font-family: Cambria, Times New Roman, serif;
+    max-width: 150px;
 }
 
 h2{
+    color: white;
     background-image: url("https://s-media-cache-ak0.pinimg.com/originals/0c/ce/2f/0cce2fd2ba502ea217b244e536fbdc47.jpg")
-    
 }
 
 img{

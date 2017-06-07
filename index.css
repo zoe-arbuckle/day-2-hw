@@ -10,8 +10,12 @@ section > div {
 
 button{
     border-width: 1px;
-    border-color: black;
+    border-color: navy;
     border-style: solid;
     padding: 3px;
     background-color: white;
+}
+
+li{
+    font-family: Cambria, Times New Roman, serif;
 }

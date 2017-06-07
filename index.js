@@ -2,30 +2,38 @@ const submitForm = document.querySelector('#submitForm')
 const listInfo = document.querySelector('#listInfo')
 
 function deleteItem(e){
-    e.preventDefault()
-    $(this).parent.remove()
+  console.log('delete')
+}
+
+function promote(e){
+  console.log('promote')
 }
 
 function renderDeleteButton(){
     const delButton = document.createElement('button')
     delButton.textContent = 'X'
+    delButton.type = 'button'
 
-    return delButton.outerHTML
+    return delButton
 }
 
 function renderPromoteButton(){
-    const promote = document.createElement('button')
-    promote.textContent = '+'
+    const promButton = document.createElement('button')
+    promButton.textContent = '+'
+    promButton.type = 'button'
 
-    return promote.outerHTML
+    return promButton
 }
 
 function renderListItem(value){
     const item = document.createElement('li')
     const del = renderDeleteButton()
-    const promote = renderPromoteButton()
-    item.innerHTML = `${value}    ${promote} ${del}`
+    const prom = renderPromoteButton()
+    item.innerHTML = `${value}`
+    item.appendChild(prom)
+    item.appendChild(del)
     listInfo.prepend(item)
+    prom.addEventListener('click', promote)
 }
 
 function handleSubmit(ev){
